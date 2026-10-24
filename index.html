@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio showcasing projects in bioinformatics, computational biology, machine learning, and scientific computing.">
+    <title>Sathmayi Sridhar | Computational Biology Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="scroll-background" aria-hidden="true">
+        <div class="scroll-orb scroll-orb-one"></div>
+        <div class="scroll-orb scroll-orb-two"></div>
+        <div class="scroll-orb scroll-orb-three"></div>
+    </div>
+    <canvas id="particle-background" aria-hidden="true"></canvas>
+    <div class="background-glow background-glow-one" aria-hidden="true"></div>
+    <div class="background-glow background-glow-two" aria-hidden="true"></div>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="logo">Sathmayi Sridhar<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/resume.pdf" class="nav-resume">Resume ↗</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">BIOINFORMATICS · COMPUTATIONAL BIOLOGY · AI</p>
+                <h1>Hi, I’m <span>Sathmayi.</span><br> I turn biological questions into data-driven insights.</h1>
+                <p class="hero-description">
+                    I'm an aspiring bioinformatics and computational biology student interested in applying
+                    programming, machine learning, and computational methods to
+                    understand biological systems and advance biological discovery.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">Explore My Projects →</a>
+                    <a href="assets/resume.pdf" class="button button-secondary">View Resume</a>
+                </div>
+                <div class="hero-links">
+                    <a href="https://github.com/sathmayi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/sathmayi-sridhar-a97005241/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="visual-card">
+                    <span class="visual-label">RESEARCH INTERESTS</span>
+                    <div class="visual-item"><span class="visual-icon">01</span><span>Genomics &amp; Bioinformatics</span></div>
+                    <div class="visual-item"><span class="visual-icon">02</span><span>Machine Learning for Biology</span></div>
+                    <div class="visual-item"><span class="visual-icon">03</span><span>Computational Modeling</span></div>
+                    <div class="visual-decoration">A DATA-DRIVEN APPROACH TO BIOLOGY</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="about">
+            <div class="container about-layout">
+                <div>
+                    <p class="eyebrow">A LITTLE ABOUT ME</p>
+                    <h2>Biology meets computation.</h2>
+                </div>
+                <div class="about-content">
+                    <p>
+                        I'm interested in using computational tools to investigate
+                        biological questions, analyze complex datasets, and develop
+                        data-driven approaches to scientific problems.
+                    </p>
+                    <p>
+                        My projects explore areas including protein function prediction,
+                        genome sequence analysis, machine learning, and biological
+                        simulation. I'm continuing to develop my skills in bioinformatics,
+                        genomics, statistics, and scientific programming.
+                    </p>
+                    <p>
+                        I enjoy combining computational experimentation with biological
+                        interpretation to understand not just what the results show,
+                        but why they matter.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SELECTED WORK</p>
+                    <h2>Projects</h2>
+                </div>
+                <p>Computational projects exploring biological data, predictive modeling, and scientific discovery.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-visual project-protein">
+                        <span class="project-category">MACHINE LEARNING</span>
+                        <div class="project-visual-title">Protein Function<br>Prediction</div>
+                        <div class="project-visual-note">SEQUENCE → FEATURES → CLASSIFICATION</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">PROJECT 01</p>
+                        <h3>Protein Function Prediction</h3>
+                        <p>Building and evaluating machine learning models that classify enzymes using protein sequence-derived features.</p>
+                        <div class="tag-list">
+                            <span>Python</span><span>Biopython</span><span>scikit-learn</span><span>Feature Engineering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YOUR_USERNAME/protein-function-prediction" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-genome">
+                        <span class="project-category">BIOINFORMATICS</span>
+                        <div class="project-visual-title">Bacterial Genome<br>Analysis</div>
+                        <div class="project-visual-note">DNA → ORFs → PROTEINS → BLAST</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">PROJECT 02</p>
+                        <h3>Bacterial Genome ORF Analysis</h3>
+                        <p>Analyzing bacterial genome sequences to identify open reading frames, translate proteins, and investigate sequence similarity.</p>
+                        <div class="tag-list">
+                            <span>Python</span><span>Biopython</span><span>ORF Analysis</span><span>NCBI BLAST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YOUR_USERNAME/YOUR_GENOME_REPOSITORY" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual project-simulation">
+                        <span class="project-category">COMPUTATIONAL MODELING</span>
+                        <div class="project-visual-title">Biological<br>Simulation</div>
+                        <div class="project-visual-note">MATHEMATICAL MODEL → SIMULATION</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">PROJECT 03</p>
+                        <h3>Biological Model Recreation</h3>
+                        <p>Recreating a published biological model using Python, with a focus on simulation, visualization, and validation.</p>
+                        <div class="tag-list">
+                            <span>Python</span><span>NumPy</span><span>Matplotlib</span><span>Modeling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/YOUR_USERNAME/YOUR_SIMULATION_REPOSITORY" target="_blank" rel="noopener noreferrer">View Code ↗</a>
+                            <span class="status">In Progress</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-upcoming">
+                    <div class="project-visual project-rnaseq">
+                        <span class="project-category">GENOMICS</span>
+                        <div class="project-visual-title">RNA Sequencing<br>Analysis</div>
+                        <div class="project-visual-note">GENE EXPRESSION → BIOLOGICAL INSIGHT</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-number">PROJECT 04</p>
+                        <h3>RNA-seq Differential Expression</h3>
+                        <p>Planned analysis of RNA sequencing data to identify differentially expressed genes and investigate biological pathways.</p>
+                        <div class="tag-list">
+                            <span>R</span><span>DESeq2</span><span>Genomics</span>
+                        </div>
+                        <div class="project-links"><span class="status">Planned</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">TECHNICAL TOOLKIT</p>
+                        <h2>Skills &amp; Technologies</h2>
+                    </div>
+                    <p>Tools and methods I use to investigate computational and biological problems.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-index">01</span>
+                        <h3>Programming</h3>
+                        <p>Python · Git · GitHub</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-index">02</span>
+                        <h3>Bioinformatics</h3>
+                        <p>Biopython · BLAST · Sequence Analysis</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-index">03</span>
+                        <h3>Machine Learning</h3>
+                        <p>scikit-learn · Feature Engineering · Model Evaluation</p>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-index">04</span>
+                        <h3>Scientific Computing</h3>
+                        <p>NumPy · pandas · Matplotlib</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container contact-content">
+                <p class="eyebrow">LET'S CONNECT</p>
+               
+                <p>
+                    I'm interested in opportunities to learn, collaborate, and contribute
+                    to computational biology and bioinformatics projects.
+                </p>
+                <a href="mailto:YOUR_EMAIL@example.com" class="button button-primary">Get in Touch →</a>
+                <div class="contact-links">
+                    <a href="https://github.com/sathmayi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/sathmayi-sridhar-a97005241/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="current-year"></span> Sathmayi Sridhar</p>
+
+        </div>
+    </footer>
+</body>
+</html>
