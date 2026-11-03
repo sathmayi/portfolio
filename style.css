@@ -255,3 +255,23 @@ body { position: relative; isolation: isolate; }
     -webkit-text-fill-color: transparent;
 }
 .project-visual-title { font-family: "Playfair Display", Georgia, serif; }
+
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8bbbd1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #ffffff;
+}
